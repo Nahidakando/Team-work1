@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>Project 1 (Theme_Forest  )</title>
+</head>
+<body>
+    <header class="min-h-[100vh]">
+        <!-- nav -->
+
+        <nav class="h-[100px] flex justify-between items-center px-6 lg:px-[60px]">
+            <!-- Left Section -->
+            <div class="left-nav flex justify-center items-center">
+                <img class="h-[50px]" src="./img/Red_link_logo.svg" alt="Logo">
+                <span class="ml-4 mr-4 h-[40px] w-[2px] block bg-[#ddd] hidden lg:block"></span>
+        
+                <div class="hidden lg:flex items-center">
+                    <img class="h-[25px]" src="./img/icons8-instagram-50.png" alt="Instagram">
+                    <img class="h-[25px] ml-4" src="./img/icons8-facebook-logo-50.png" alt="Facebook">
+                </div>
+            </div>
+        
+            <!-- Right Section -->
+            <div class="right-nav hidden lg:flex justify-center items-center gap-6 list-none font-semibold">
+                <li><a href="./index.html" class="hover:text-red-500">Home</a></li>
+                <li><a href="./menu.html" class="hover:text-red-500">Menu</a></li>
+                <li><a href="./offer.html" class="hover:text-red-500">Offers</a></li>
+                <li><a href="#" class="hover:text-red-500">Branches</a></li>
+                <li><a href="#" class="hover:text-red-500">Order Process</a></li>
+                <li><a href="#" class="hover:text-red-500">About Us</a></li>
+                <button class="bg-red-500 text-white px-6 py-2 rounded-3xl hover:bg-red-600">Booking</button>
+            </div>
+        
+            <!-- Mobile Hamburger -->
+            <div class="lg:hidden">
+                <button id="menu-toggle" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden font-semibold flex flex-col px-[30px] list-none  bg-white w-full absolute top-[100px] left-0 shadow-md z-10">
+                <li class="py-2"><a href="./index.html" class="hover:text-red-500">Home</a></li>
+                <li class="py-2"><a href="./menu.html" class="hover:text-red-500">Menu</a></li>
+                <li class="py-2"><a href="./offer.html" class="hover:text-red-500">Offers</a></li>
+                <li class="py-2"><a href="#" class="hover:text-red-500">Branches</a></li>
+                <li class="py-2"><a href="#" class="hover:text-red-500">Order Process</a></li>
+                <li class="py-2"><a href="#" class="hover:text-red-500">About Us</a></li>
+                <button class="bg-red-500 text-white px-6 py-2 rounded-3xl hover:bg-red-600 mt-4 mb-4">Booking</button>
+            </div>
+        </nav>
+        
+        <script>
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+        
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+        
+
+        <!-- end Nav -->
+
+
+
+
+        <!-- hero section  -->
+
+        <div class="relative hero h-[84vh] w-[full] flex justify-center items-center">
+            <h1 class="text-[#fff] text-[4em] font-[900] uppercase font-["Playwrite IN", serif;]">traditional glass <br/> In the best taste</h1>
+            <button class="absolute text-[#fff] font-semibold bg-red-600 px-[35px] ml-[60px] mb-[40px] font-[bold] py-[10px] rounded-3xl">See Our Offers</button>
+        </div>
+
+        <!-- hero section end  -->
+
+
+        <!-- menu section  -->
+
+        <div class="menu min-h-[130vh] relative flex justify-center items-center">
+            <div class="boxmenu bg-red-100 h-[100%] pb-[50px] w-[90%] rounded-tr-[130px] rounded-bl-[100px] flex  items-center flex-col">
+
+                <!-- top menu  -->
+
+
+                <div class="top-menu mt-[30px]  w-[full] flex justify-center items-center flex-col">
+                    <h1 class="text-[2.5em] font-semibold">Our Special Works</h1>
+                    <div class="menu list-none flex justify-center items-center gap-[15px] mt-[50px] font-semibold text-[17px] text-[#333]">
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">Organic</a></li>
+                        <li><a href="#">Relatate</a></li>
+                        <li><a href="#">Normal</a></li>
+                    </div>
+                </div>
+
+                <!-- end top menu  -->
+
+
+
+
+                <div class="boxcard flex justify-center items-center gap-[30px] mt-[50px]">
+
+
+
+                    <div class="bcard w-[220px] h-[400px] bg-[#fff] rounded-2xl overflow-hidden shadow-md">
+                        <div class="topbcard h-[50%] bg-green-500 relative">
+                            <img src="./img/Image Background Orange Minimal Phone Wallpaper.png" alt="" class="h-[100%] bg-cover w-[100%]">
+                        </div>
+
+                        <div class="btmcard flex justify-center items-center flex-col mt-[50px]">
+                            <h1 class="font-semibold text-[17px]">Product Name</h1>
+                            <div class="package flex justify-center items-center mt-[30px] list-none gap-[10px]">
+                                <li class="bg-red-500 text-[#fff] px-[10px] rounded-xl"><a href="#">Silver</a></li>
+                                <li class="bg-red-500 text-[#fff] px-[10px] rounded-xl"><a href="#"></a>Gold</li>
+                                <li class="bg-red-500 text-[#fff] px-[10px] rounded-xl"><a href="#"></a>Dimond</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bcard w-[220px] h-[400px] bg-white rounded-2xl overflow-hidden shadow-md">
+                        <div class="topbcard h-[50%] bg-green-500 relative">
+                            <img src="./img/Image Background Orange Minimal Phone Wallpaper.png" alt="" class="h-[100%] bg-cover w-[100%]">
+                        </div>
+
+                        <div class="btmcard flex justify-center items-center flex-col mt-[50px]">
+                            <h1 class="font-semibold text-[17px]">Product Name</h1>
+                            <div class="package flex justify-center items-center mt-[30px] list-none gap-[10px]">
+                                <li class="bg-red-500 text-[#fff] px-[10px] rounded-xl"><a href="#">Silver</a></li>
+                                <li class="bg-red-500 text-[#fff] px-[10px] rounded-xl"><a href="#"></a>Gold</li>
+                                <li class="bg-red-500 text-[#fff] px-[10px] rounded-xl"><a href="#"></a>Dimond</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bcard w-[220px] h-[400px] bg-white rounded-2xl overflow-hidden shadow-md">
+                        <div class="topbcard h-[50%] bg-green-500 relative">
+                            <img src="./img/Image Background Orange Minimal Phone Wallpaper.png" alt="" class="h-[100%] bg-cover w-[100%]">
+                        </div>
+
+                        <div class="btmcard flex justify-center items-center flex-col mt-[50px]">
+                            <h1 class="font-semibold text-[17px]">Product Name</h1>
+                            <div class="package flex justify-center items-center mt-[30px] list-none gap-[10px]">
+                                <li class="bg-red-500 text-[#fff] px-[10px] rounded-xl"><a href="#">Silver</a></li>
+                                <li class="bg-red-500 text-[#fff] px-[10px] rounded-xl"><a href="#"></a>Gold</li>
+                                <li class="bg-red-500 text-[#fff] px-[10px] rounded-xl"><a href="#"></a>Dimond</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bcard w-[220px] h-[400px] bg-white rounded-2xl overflow-hidden shadow-md">
+                        <div class="topbcard h-[50%] bg-green-500 relative">
+                            <img src="./img/Image Background Orange Minimal Phone Wallpaper.png" alt="" class="h-[100%] bg-cover w-[100%]">
+                        </div>
+
+                        <div class="btmcard flex justify-center items-center flex-col mt-[50px]">
+                            <h1 class="font-semibold text-[17px]">Product Name</h1>
+                            <div class="package flex justify-center items-center mt-[30px] list-none gap-[10px]">
+                                <li class="bg-red-500 text-[#fff] px-[10px] rounded-xl"><a href="#">Silver</a></li>
+                                <li class="bg-red-500 text-[#fff] px-[10px] rounded-xl"><a href="#"></a>Gold</li>
+                                <li class="bg-red-500 text-[#fff] px-[10px] rounded-xl"><a href="#"></a>Dimond</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- end menu section -->
+
+
+
+
+        <!-- branches section  -->
+         
+        <div class="Branchs h-[170vh] relative flex justify-center items-center flex-col bg-[#ECFAFE] pb-[110px] pt-[40px]">
+
+                <!-- top branch  -->
+
+
+                <div class="top-branch mt-[30px]  w-[full] flex justify-center items-center flex-col">
+                    <h1 class="text-[2.5em] font-semibold">Our Branches</h1>
+                    
+                </div>
+
+                <!-- end top branch  -->
+
+
+
+
+                <div class="boxcard w-[80%] flex justify-center items-center gap-[40px] mt-[50px] flex-wrap">
+
+
+
+                    <div class="bcard w-[220px] h-[400px] bg-[#fff] rounded-2xl overflow-hidden shadow-md">
+                        <div class="topbcard h-[50%] bg-green-500 relative">
+                            <img src="./img/Blue Coming Soon New Branch Instagram Post.png" alt="" class="h-[100%] bg-cover w-[100%]">
+                        </div>
+
+                        <div class="btmcard flex justify-center items-center flex-col mt-[50px]">
+                            <h1 class="font-semibold text-[19px]">Product Name</h1>
+                            <button class="mt-[50px] bg-red-600 text-[#fff] px-[30px] py-[6px] rounded-3xl">See More</button>
+                        </div>
+                    </div>
+                    <div class="bcard w-[220px] h-[400px] bg-white rounded-2xl overflow-hidden shadow-md">
+                        <div class="topbcard h-[50%] bg-green-500 relative">
+                            <img src="./img/Blue Coming Soon New Branch Instagram Post.png" alt="" class="h-[100%] bg-cover w-[100%]">
+                        </div>
+
+                        <div class="btmcard flex justify-center items-center flex-col mt-[50px]">
+                            <h1 class="font-semibold text-[19px]">Product Name</h1>
+                            <button class="mt-[50px] bg-red-600 text-[#fff] px-[30px] py-[6px] rounded-3xl">See More</button>
+                        </div>
+                    </div>
+                    <div class="bcard w-[220px] h-[400px] bg-white rounded-2xl overflow-hidden shadow-md">
+                        <div class="topbcard h-[50%] bg-green-500 relative">
+                            <img src="./img/Blue Coming Soon New Branch Instagram Post.png" alt="" class="h-[100%] bg-cover w-[100%]">
+                        </div>
+
+                        <div class="btmcard flex justify-center items-center flex-col mt-[50px]">
+                            <h1 class="font-semibold text-[19px]">Product Name</h1>
+                            <button class="mt-[50px] bg-red-600 text-[#fff] px-[30px] py-[6px] rounded-3xl">See More</button>
+
+                        </div>
+                    </div>
+                    <div class="bcard w-[220px] h-[400px] bg-white rounded-2xl overflow-hidden shadow-md">
+                        <div class="topbcard h-[50%] bg-green-500 relative">
+                            <img src="./img/Blue Coming Soon New Branch Instagram Post.png" alt="" class="h-[100%] bg-cover w-[100%]">
+                        </div>
+
+                        <div class="btmcard flex justify-center items-center flex-col mt-[50px]">
+                            <h1 class="font-semibold text-[19px]">Product Name</h1>
+                            <button class="mt-[50px] bg-red-600 text-[#fff] px-[30px] py-[6px] rounded-3xl">See More</button>
+
+                        </div>
+                    </div>
+                    <div class="bcard w-[220px] h-[400px] bg-white rounded-2xl overflow-hidden shadow-md">
+                        <div class="topbcard h-[50%] bg-green-500 relative">
+                            <img src="./img/Blue Coming Soon New Branch Instagram Post.png" alt="" class="h-[100%] bg-cover w-[100%]">
+                        </div>
+
+                        <div class="btmcard flex justify-center items-center flex-col mt-[50px]">
+                            <h1 class="font-semibold text-[19px]">Product Name</h1>
+                            <button class="mt-[50px] bg-red-600 text-[#fff] px-[30px] py-[6px] rounded-3xl">See More</button>
+
+                        </div>
+                    </div>
+                    <div class="bcard w-[220px] h-[400px] bg-white rounded-2xl overflow-hidden shadow-md">
+                        <div class="topbcard h-[50%] bg-green-500 relative">
+                            <img src="./img/Blue Coming Soon New Branch Instagram Post.png" alt="" class="h-[100%] bg-cover w-[100%]">
+                        </div>
+
+                        <div class="btmcard flex justify-center items-center flex-col mt-[50px]">
+                            <h1 class="font-semibold text-[19px]">Product Name</h1>
+                            <button class="mt-[50px] bg-red-600 text-[#fff] px-[30px] py-[6px] rounded-3xl">See More</button>
+
+                        </div>
+                    </div>
+                    <div class="bcard w-[220px] h-[400px] bg-white rounded-2xl overflow-hidden shadow-md">
+                        <div class="topbcard h-[50%] bg-green-500 relative">
+                            <img src="./img/Blue Coming Soon New Branch Instagram Post.png" alt="" class="h-[100%] bg-cover w-[100%]">
+                        </div>
+
+                        <div class="btmcard flex justify-center items-center flex-col mt-[50px]">
+                            <h1 class="font-semibold text-[19px]">Product Name</h1>
+                            <button class="mt-[50px] bg-red-600 text-[#fff] px-[30px] py-[6px] rounded-3xl">See More</button>
+
+                        </div>
+                    </div>
+                    <div class="bcard w-[220px] h-[400px] bg-white rounded-2xl overflow-hidden shadow-md">
+                        <div class="topbcard h-[50%] bg-green-500 relative">
+                            <img src="./img/Blue Coming Soon New Branch Instagram Post.png" alt="" class="h-[100%] bg-cover w-[100%]">
+                        </div>
+
+                        <div class="btmcard flex justify-center items-center flex-col mt-[50px]">
+                            <h1 class="font-semibold text-[19px]">Product Name</h1>
+                            <button class="mt-[50px] bg-red-600 text-[#fff] px-[30px] py-[6px] rounded-3xl">See More</button>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- end branches section  -->
+
+        <!-- partnar  -->
+
+        <div class="partnar h-[80vh] flex justify-center items-center bg-[#f4f4f4]">
+            <div class="leftp w-[48%] flex justify-center items-center">
+                <h1 class="text-[42px] font-bold">Our Partnar</h1>
+            </div>
+            <div class="rightp w-[48%] flex justify-center items-center">
+                <div class="pbox w-[550px] h-[340px] shadow-lg bg-[#fff] rounded-3xl overflow-hidden">
+                    <div class="top h-[50%] border-b-[2px] border-[#eee] flex items-center justify-center">
+                        <h1 style="font-family:'Courier New', Courier, monospace; " class="text-[1.6em]">Antor akando</h1>
+                    </div>
+                    <div class="btm W-[100%] h-[50%] flex ">
+                        <div class="leftbtm w-[50%] h-[100%] border-r-[2px] border-[#eee] flex justify-center items-center">
+                            <h1 style="font-family:'Courier New', Courier, monospace; " class="text-[1.6em]">Nahid akando</h1>
+                        </div>
+                        <div class="right w-[50%] h-[100%]  flex justify-center items-center ">
+                            <h1 style="font-family:'Courier New', Courier, monospace; " class="text-[1.6em]">Hasan akando</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- end partnar -->
+
+
+
+
+        <!-- carousel  -->
+
+
+        <div class="w-full h-[70vh] flex justijfy-center items-center bg-[#E2E0C8]">
+            <div id="content-card" class="max-w-md mx-auto p-5 bg-white shadow-lg rounded-2xl border border-gray-200 h-[40vh] flex flex-col justify-center">
+                <!-- Top Section -->
+                <div class="flex items-center space-x-4">
+                  <!-- User Avatar -->
+                  <img
+                    id="user-avatar"
+                    src="https://via.placeholder.com/80"
+                    alt="User Avatar"
+                    class="w-16 h-16 rounded-full border border-gray-300"
+                  />
+                  <!-- User Details -->
+                  <div>
+                    <h3 id="user-name" class="text-lg font-semibold text-gray-800">User12345</h3>
+                    <p id="user-id" class="text-sm text-gray-500">ID: 56789</p>
+                  </div>
+                </div>
+              
+                <!-- Bottom Section -->
+                <div class="mt-4">
+                  <h4 class="text-lg font-medium text-gray-900">Course Preview</h4>
+                  <p id="course-description" class="mt-2 text-sm text-gray-600">
+                    Learn the basics of web development in this comprehensive course. Get hands-on experience with HTML, CSS, and JavaScript while building real-world projects.
+                  </p>
+                </div>
+              </div>
+
+        </div>  
+          
+
+        <!-- end carousel  -->
+
+
+        <!-- fotter  -->
+        `   <div class="footer h-[60vh] bg-[#222] -mt-[24px] px-[20px] flex flex-col justify-center">
+            <div class="topfoot text-white w-full px-[20px] h-[85%] flex justify-center items-center gap-[20px] pt-[30px] pl-[60px]">
+                <div class="box1 w-[300px]  h-full">
+                    <div class="tblogo flex items-center gap-[10px] p-6">
+                        <img src="./img/Red_link_logo.svg" alt="img" class="h-[50px]">
+                        <h1 class="font-semibold">Demo Site</h1>
+                    </div>
+                    <h1 class="pl-6 font-semibold">Make Your Dream Comes True....</h1>
+                    <div class="social flex  items-center p-6 gap-[10px]" >
+                        <img class="h-[30px]" src="./img/icons8-twitter-48.png" alt="">
+                        <img class="h-[30px]" src="./img/icons8-telegram-app-48.png" alt="">
+                        <img class="h-[30px]" src="./img/icons8-pinterest-48.png" alt="">
+                        <img class="h-[30px]" src="./img/icons8-whatsapp-48.png" alt="">
+
+                    </div>
+
+                </div>
+
+                <div class="box2 w-[300px]  h-full p-6 flex flex-col   items-center gap-[20px]">
+                    <h1 class="text-[18px] font-bold">Products</h1>
+                    <div class="promenu list-none flex flex-col gap-[7px] ">
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">price List</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </div>
+
+                </div>
+
+                <div class="box3 w-[300px]  h-full p-6 flex flex-col  gap-[20px]">
+                    <h1 class="text-[18px] font-bold">Company</h1>
+                    <div class="promenu list-none flex flex-col gap-[7px]">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Branch Contacts With Menu</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </div>
+
+                </div>
+                
+                <div class="box4 w-[300px] h-full p-6 flex flex-col    gap-[20px]">
+                    <h1 class="text-[18px] font-bold">Support</h1>
+                    <div class="promenu list-none flex flex-col gap-[7px] ">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Report a Bug</a></li>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="btmfoot text-white border-t-[1px] border-[#777] flex justify-center items-center h-[15%]">
+                <h1 class="pr-[10px]">Developer Team</h1>
+                Copyright © 2025 ' AADEV GROUP ' | All Rights Reserved
+            </div>
+        </div>  
+          
+         <!-- end footer  -->
+
+
+
+
+
+    </header>
+</body>
+<script src="./index.js"></script>
+</html>

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&display=swap');*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Lato", serif;
+}
+
+.hero{
+    background:url("./img/641d6189be2e3b4e07c9dfa6_Group\ 37.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    h1{
+        font-family: "Macondo", serif;
+    }
+    button{
+        left:0;
+        bottom:0
+        
+    }
+}
+
+
+@keyframes slide {
+    0%, 20% {
+      transform: translateX(0%);
+    }
+    33%, 53% {
+      transform: translateX(-100%);
+    }
+    66%, 86% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-slide {
+    animation: slide 12s infinite;
+  }
+
+
+@media (max-width: 768px) {
+  .boxcard{
+    flex-wrap: wrap;
+  }
+
+  .partnar{
+    flex-direction: column;
+    gap:50px;
+    .rightp{
+      width:700px;
+    }
+  }
+
+  .menu{
+    .boxmenu{
+      height:100%;
+      padding-bottom: 50px;
+
+    }
+  }
+
+
+
+
+
+
+
+  .footer{
+    height: 90vh;
+    justify-content: flex-start;
+    .topfoot{
+      height:90%;
+      padding:30px 0;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-left: 50px;
+    }
+    .btmfoot{
+      height: 10%;
+    }
+  }
+  
+}

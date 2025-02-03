@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="header">
+         <!-- nav -->
+
+         <nav class="h-[100px] flex justify-between items-center px-6 lg:px-[60px]">
+          <!-- Left Section -->
+          <div class="left-nav flex justify-center items-center">
+              <img class="h-[50px]" src="./img/Red_link_logo.svg" alt="Logo">
+              <span class="ml-4 mr-4 h-[40px] w-[2px] block bg-[#ddd] hidden lg:block"></span>
+      
+              <div class="hidden lg:flex items-center">
+                  <img class="h-[25px]" src="./img/icons8-instagram-50.png" alt="Instagram">
+                  <img class="h-[25px] ml-4" src="./img/icons8-facebook-logo-50.png" alt="Facebook">
+              </div>
+          </div>
+      
+          <!-- Right Section -->
+          <div class="right-nav hidden lg:flex justify-center items-center gap-6 list-none font-semibold">
+              <li><a href="./index.html" class="hover:text-red-500">Home</a></li>
+              <li><a href="./menu.html" class="hover:text-red-500">Menu</a></li>
+              <li><a href="./offer.html" class="hover:text-red-500">Offers</a></li>
+              <li><a href="#" class="hover:text-red-500">Branches</a></li>
+              <li><a href="#" class="hover:text-red-500">Order Process</a></li>
+              <li><a href="#" class="hover:text-red-500">About Us</a></li>
+              <button class="bg-red-500 text-white px-6 py-2 rounded-3xl hover:bg-red-600">Booking</button>
+          </div>
+      
+          <!-- Mobile Hamburger -->
+          <div class="lg:hidden">
+              <button id="menu-toggle" class="text-black focus:outline-none">
+                  <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                  </svg>
+              </button>
+          </div>
+      
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden font-semibold flex flex-col px-[30px] list-none  bg-white w-full absolute top-[100px] left-0 shadow-md z-10">
+              <li class="py-2"><a href="./index.html" class="hover:text-red-500">Home</a></li>
+              <li class="py-2"><a href="./menu.html" class="hover:text-red-500">Menu</a></li>
+              <li class="py-2"><a href="./offer.html" class="hover:text-red-500">Offers</a></li>
+              <li class="py-2"><a href="#" class="hover:text-red-500">Branches</a></li>
+              <li class="py-2"><a href="#" class="hover:text-red-500">Order Process</a></li>
+              <li class="py-2"><a href="#" class="hover:text-red-500">About Us</a></li>
+              <button class="bg-red-500 text-white px-6 py-2 rounded-3xl hover:bg-red-600 mt-4 mb-4">Booking</button>
+          </div>
+      </nav>
+      
+      <script>
+          const menuToggle = document.getElementById('menu-toggle');
+          const mobileMenu = document.getElementById('mobile-menu');
+      
+          menuToggle.addEventListener('click', () => {
+              mobileMenu.classList.toggle('hidden');
+          });
+      </script>
+      
+
+      <!-- end Nav -->
+
+
+
+
+        <!-- hero section  -->
+
+        <div class="relative hero h-[84vh] w-[full] flex justify-center items-center">
+            <h1 class="text-[#fff] text-[6em] font-[900] uppercase font-["Playwrite IN", serif;]">Offers</h1>
+        </div>
+
+
+        <!-- end hero section -->
+    </div>
+
+
+        <!-- offer page  -->
+
+
+
+
+        <div class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-6 space-y-6">
+            <!-- Offer Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
+              <!-- Offer Card 1 -->
+              <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                <h1 class="text-xl font-bold text-gray-800">Special Offer 1</h1>
+                <p class="text-gray-600 mt-2">Get up to 30% Off on selected items.</p>
+                <div class="mt-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg py-4">
+                  <h2 class="text-4xl font-bold">$19.99</h2>
+                  <p class="text-sm mt-2">Original: <span class="line-through">$29.99</span></p>
+                </div>
+                <p class="text-gray-600 text-sm mt-4">Offer Ends In:</p>
+                <div id="timer1" class="flex justify-center space-x-4 mt-2">
+                  <div class="text-center">
+                    <p class="text-xl font-bold text-gray-800" id="days1">00</p>
+                    <span class="text-sm text-gray-500">Days</span>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-xl font-bold text-gray-800" id="hours1">00</p>
+                    <span class="text-sm text-gray-500">Hours</span>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-xl font-bold text-gray-800" id="minutes1">00</p>
+                    <span class="text-sm text-gray-500">Minutes</span>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-xl font-bold text-gray-800" id="seconds1">00</p>
+                    <span class="text-sm text-gray-500">Seconds</span>
+                  </div>
+                </div>
+                <button class="mt-4 bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 transition">
+                  Claim Now
+                </button>
+              </div>
+          
+              <!-- Offer Card 2 -->
+              <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                <h1 class="text-xl font-bold text-gray-800">Special Offer 2</h1>
+                <p class="text-gray-600 mt-2">Buy 1 Get 1 Free on accessories.</p>
+                <div class="mt-4 bg-gradient-to-r from-green-500 to-teal-600 text-white rounded-lg py-4">
+                  <h2 class="text-4xl font-bold">$9.99</h2>
+                  <p class="text-sm mt-2">Original: <span class="line-through">$19.99</span></p>
+                </div>
+                <p class="text-gray-600 text-sm mt-4">Offer Ends In:</p>
+                <div id="timer2" class="flex justify-center space-x-4 mt-2">
+                  <div class="text-center">
+                    <p class="text-xl font-bold text-gray-800" id="days2">00</p>
+                    <span class="text-sm text-gray-500">Days</span>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-xl font-bold text-gray-800" id="hours2">00</p>
+                    <span class="text-sm text-gray-500">Hours</span>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-xl font-bold text-gray-800" id="minutes2">00</p>
+                    <span class="text-sm text-gray-500">Minutes</span>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-xl font-bold text-gray-800" id="seconds2">00</p>
+                    <span class="text-sm text-gray-500">Seconds</span>
+                  </div>
+                </div>
+                <button class="mt-4 bg-green-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-600 transition">
+                  Claim Now
+                </button>
+              </div>
+          
+              <!-- Offer Card 3 -->
+              <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                <h1 class="text-xl font-bold text-gray-800">Special Offer 3</h1>
+                <p class="text-gray-600 mt-2">Flat 50% Off on first order.</p>
+                <div class="mt-4 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-lg py-4">
+                  <h2 class="text-4xl font-bold">$49.99</h2>
+                  <p class="text-sm mt-2">Original: <span class="line-through">$99.99</span></p>
+                </div>
+                <p class="text-gray-600 text-sm mt-4">Offer Ends In:</p>
+                <div id="timer3" class="flex justify-center space-x-4 mt-2">
+                  <div class="text-center">
+                    <p class="text-xl font-bold text-gray-800" id="days3">00</p>
+                    <span class="text-sm text-gray-500">Days</span>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-xl font-bold text-gray-800" id="hours3">00</p>
+                    <span class="text-sm text-gray-500">Hours</span>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-xl font-bold text-gray-800" id="minutes3">00</p>
+                    <span class="text-sm text-gray-500">Minutes</span>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-xl font-bold text-gray-800" id="seconds3">00</p>
+                    <span class="text-sm text-gray-500">Seconds</span>
+                  </div>
+                </div>
+                <button class="mt-4 bg-red-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-600 transition">
+                  Claim Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+        <!-- Offer page end -->
+
+
+
+      <!-- fotter  -->
+      `   <div class="footer h-[60vh] bg-[#222] -mt-[24px] px-[20px]">
+        <div class="topfoot text-white w-full px-[20px] h-[85%] flex justify-center items-center gap-[20px] pt-[30px] pl-[60px]">
+            <div class="box1 w-[300px]  h-full">
+                <div class="tblogo flex items-center gap-[10px] p-6">
+                    <img src="./img/Red_link_logo.svg" alt="img" class="h-[50px]">
+                    <h1 class="font-semibold">Demo Site</h1>
+                </div>
+                <h1 class="pl-6 font-semibold">Make Your Dream Comes True....</h1>
+                <div class="social flex  items-center p-6 gap-[10px]" >
+                    <img class="h-[30px]" src="./img/icons8-twitter-48.png" alt="">
+                    <img class="h-[30px]" src="./img/icons8-telegram-app-48.png" alt="">
+                    <img class="h-[30px]" src="./img/icons8-pinterest-48.png" alt="">
+                    <img class="h-[30px]" src="./img/icons8-whatsapp-48.png" alt="">
+
+                </div>
+
+            </div>
+
+            <div class="box2 w-[300px]  h-full p-6 flex flex-col   items-center gap-[20px]">
+                <h1 class="text-[18px] font-bold">Products</h1>
+                <div class="promenu list-none flex flex-col gap-[7px] ">
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">price List</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Updates</a></li>
+                </div>
+
+            </div>
+
+            <div class="box3 w-[300px]  h-full p-6 flex flex-col  gap-[20px]">
+                <h1 class="text-[18px] font-bold">Company</h1>
+                <div class="promenu list-none flex flex-col gap-[7px]">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Branch Contacts With Menu</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </div>
+
+            </div>
+            
+            <div class="box4 w-[300px] h-full p-6 flex flex-col    gap-[20px]">
+                <h1 class="text-[18px] font-bold">Support</h1>
+                <div class="promenu list-none flex flex-col gap-[7px] ">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Report a Bug</a></li>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="btmfoot text-white border-t-[1px] border-[#777] flex justify-center items-center h-[15%]">
+            <h1 class="pr-[10px]">Developer Team</h1>
+            Copyright © 2025 ' AADEV GROUP ' | All Rights Reserved
+        </div>
+    </div>  
+      
+     <!-- end footer  -->
+    
+</body>
+<script src="./offer.js"></script>
+</html>
